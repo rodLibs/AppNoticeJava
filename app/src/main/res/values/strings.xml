@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AppNewsJava</string>
+    <string name="news_favorites">Favoritas</string>
+    <string name="news">Noticias</string>
+    <string name="categori">Categorias</string>
+    <string name="msg_error">Ocorreu um erro ao obter dados.</string>
 </resources>

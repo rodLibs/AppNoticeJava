@@ -3,6 +3,7 @@ package com.example.appnewsjava.mvp.list_news;
 import android.content.Context;
 import android.os.AsyncTask;
 
+import com.example.appnewsjava.R;
 import com.example.appnewsjava.data.database.DatabaseHelper;
 import com.example.appnewsjava.data.model.Item;
 import com.example.appnewsjava.data.network.CallbackNetwork;
@@ -23,12 +24,13 @@ public class ListNewsPresenter implements ListNewsInterface.Presenter {
 
     private ListNewsInterface.View mView;
     private Context context;
-    private DatabaseHelper databaseHelper = DatabaseHelper.getInstance(context);
+    private DatabaseHelper databaseHelper;
 
 
     public ListNewsPresenter(ListNewsInterface.View mView, Context context) {
         this.mView = mView;
         this.context = context;
+        databaseHelper = DatabaseHelper.getInstance(context);
     }
 
 
@@ -53,7 +55,7 @@ public class ListNewsPresenter implements ListNewsInterface.Presenter {
                         try {
                             parseXmlToJson(response);
                         } catch (JSONException e) {
-                            mView.showMessageErro("Ocorreu um erro ao obter dados.");
+                            mView.showMessageErro(context.getString(R.string.msg_error));
                         }
                     } else {
                         mView.showMessageErro(""+code);
