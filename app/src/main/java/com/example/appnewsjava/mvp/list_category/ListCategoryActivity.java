@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.appnewsjava.R;
-import com.example.appnewsjava.data.model.Category;
+import com.example.appnewsjava.data.pojo.Category;
 import com.example.appnewsjava.mvp.adapters.AdapterRecycleCategory;
 import com.example.appnewsjava.mvp.list_news.ListNewsActivity;
 
@@ -38,7 +38,7 @@ public class ListCategoryActivity extends AppCompatActivity implements ListCateg
         recycleView = findViewById(R.id.recycleView);
         txtDate = findViewById(R.id.txtDate);
 
-        mPresenter = new ListCategoryPresenter(ListCategoryActivity.this,ListCategoryActivity.this);
+        mPresenter = new ListCategoryPresenter(ListCategoryActivity.this);
         mPresenter.getListCategory();
         txtDate.setText(dfDate.format(new Date()));
     }

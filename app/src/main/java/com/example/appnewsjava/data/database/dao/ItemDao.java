@@ -1,8 +1,8 @@
-package com.example.appnewsjava.data.database;
+package com.example.appnewsjava.data.database.dao;
 
 import androidx.room.Dao;
 import androidx.room.*;
-import com.example.appnewsjava.data.model.Item;
+import com.example.appnewsjava.data.database.entity.Item;
 import java.util.List;
 
 @Dao

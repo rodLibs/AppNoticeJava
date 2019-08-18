@@ -1,4 +1,4 @@
-package com.example.appnewsjava.data.model;
+package com.example.appnewsjava.data.database.entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

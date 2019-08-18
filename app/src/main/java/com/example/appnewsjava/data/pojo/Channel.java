@@ -1,4 +1,6 @@
-package com.example.appnewsjava.data.model;
+package com.example.appnewsjava.data.pojo;
+
+import com.example.appnewsjava.data.database.entity.Item;
 
 import java.util.ArrayList;
 

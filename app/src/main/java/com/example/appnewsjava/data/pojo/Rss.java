@@ -1,4 +1,4 @@
-package com.example.appnewsjava.data.model;
+package com.example.appnewsjava.data.pojo;
 
 public class Rss {
 

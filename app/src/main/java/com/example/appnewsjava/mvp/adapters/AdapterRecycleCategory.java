@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.appnewsjava.R;
-import com.example.appnewsjava.data.model.Category;
+import com.example.appnewsjava.data.pojo.Category;
 import com.example.appnewsjava.mvp.list_category.ItemClickCategoryListener;
 import java.util.ArrayList;
 

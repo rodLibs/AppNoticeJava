@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.appnewsjava.R;
-import com.example.appnewsjava.data.model.Item;
+import com.example.appnewsjava.data.database.entity.Item;
 
 public class DetailNewsActivity extends AppCompatActivity implements DetailsNewsInterface.View  {
 

@@ -17,8 +17,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.appnewsjava.R;
-import com.example.appnewsjava.data.model.Category;
-import com.example.appnewsjava.data.model.Item;
+import com.example.appnewsjava.data.pojo.Category;
+import com.example.appnewsjava.data.database.entity.Item;
 import com.example.appnewsjava.mvp.adapters.AdapterRecycle;
 import com.example.appnewsjava.mvp.details_news.DetailNewsActivity;
 import com.example.appnewsjava.util.Constants;
